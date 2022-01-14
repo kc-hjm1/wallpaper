@@ -1,0 +1,400 @@
+
+:root {
+    --day1: url('./assets/day0.jpg');
+    --day2: url('./assets/day0.jpg');
+    --day3: url('./assets/day0.jpg');
+    --day4: url('./assets/day0.jpg');
+    --day5: url('./assets/day0.jpg');
+    --day6: url('./assets/day0.jpg');
+    --day7: url('./assets/day0.jpg');
+    --day8: url('./assets/day0.jpg');
+    --day9: url('./assets/day0.jpg');
+    --day10: url('./assets/day0.jpg');
+    --day11: url('./assets/day0.jpg');
+    --day12: url('./assets/day0.jpg');
+    --day13: url('./assets/day0.jpg');
+    --day14: url('./assets/day0.jpg');
+    --day15: url('./assets/day0.jpg');
+    --day16: url('./assets/day0.jpg');
+    --day17: url('./assets/day0.jpg');
+    --day18: url('./assets/day0.jpg');
+    --day19: url('./assets/day0.jpg');
+    --day20: url('./assets/day0.jpg');
+    --day21: url('./assets/day0.jpg');
+    --day22: url('./assets/day0.jpg');
+    --day23: url('./assets/day0.jpg');
+    --day24: url('./assets/day0.jpg');
+    --day25: url('./assets/day0.jpg');
+    --day26: url('./assets/day0.jpg');
+    --day27: url('./assets/day0.jpg');
+    --day28: url('./assets/day0.jpg');
+    --day29: url('./assets/day0.jpg');
+    --day30: url('./assets/day0.jpg');
+    --evening1: url('./assets/evening0.jpg');
+    --evening2: url('./assets/evening0.jpg');
+    --evening3: url('./assets/evening0.jpg');
+    --evening4: url('./assets/evening0.jpg');
+    --evening5: url('./assets/evening0.jpg');
+    --evening6: url('./assets/evening0.jpg');
+    --evening7: url('./assets/evening0.jpg');
+    --evening8: url('./assets/evening0.jpg');    
+    --evening9: url('./assets/evening0.jpg');
+    --evening10: url('./assets/evening0.jpg');
+    --evening11: url('./assets/evening0.jpg');
+    --evening12: url('./assets/evening0.jpg');
+    --evening13: url('./assets/evening0.jpg');
+    --evening14: url('./assets/evening0.jpg');
+    --evening15: url('./assets/evening0.jpg');
+    --evening16: url('./assets/evening0.jpg');
+    --evening17: url('./assets/evening0.jpg');
+    --evening18: url('./assets/evening0.jpg');
+    --evening19: url('./assets/evening0.jpg');
+    --evening20: url('./assets/evening0.jpg');
+    --evening21: url('./assets/evening0.jpg');
+    --evening22: url('./assets/evening0.jpg');
+    --evening23: url('./assets/evening0.jpg');
+    --evening24: url('./assets/evening0.jpg');
+    --evening25: url('./assets/evening0.jpg');
+    --evening26: url('./assets/evening0.jpg');
+    --evening27: url('./assets/evening0.jpg');
+    --evening28: url('./assets/evening0.jpg');
+    --evening29: url('./assets/evening0.jpg');
+    --evening30: url('./assets/evening0.jpg');
+    --evening31: url('./assets/evening0.jpg');
+    --night1: url('./assets/night0.jpg');
+    --night2: url('./assets/night0.jpg');
+    --night3: url('./assets/night0.jpg');
+    --night4: url('./assets/night0.jpg');
+    --night5: url('./assets/night0.jpg');
+    --night6: url('./assets/night0.jpg');
+    --night7: url('./assets/night0.jpg');
+    --night8: url('./assets/night0.jpg');
+    --night9: url('./assets/night0.jpg');
+    --night10: url('./assets/night0.jpg');
+    --night11: url('./assets/night0.jpg');
+    --night12: url('./assets/night0.jpg');
+    --night13: url('./assets/night0.jpg');
+    --night14: url('./assets/night0.jpg');
+    --night15: url('./assets/night0.jpg');
+    --night16: url('./assets/night0.jpg');
+    --night17: url('./assets/night0.jpg');
+    --night18: url('./assets/night0.jpg');
+    --night19: url('./assets/night0.jpg');
+    --night20: url('./assets/night0.jpg');
+    --night21: url('./assets/night0.jpg');
+    --night22: url('./assets/night0.jpg');
+    --night23: url('./assets/night0.jpg');
+    --night24: url('./assets/night0.jpg');
+    --night25: url('./assets/night0.jpg');
+    
+    --rain1: url('./assets/rain0.jpg');
+    --rain2: url('./assets/rain0.jpg');
+    --rain3: url('./assets/rain0.jpg');
+    --rain4: url('./assets/rain0.jpg');
+    --rain5: url('./assets/rain0.jpg');
+    --rain6: url('./assets/rain0.jpg');
+    --rain7: url('./assets/rain0.jpg');
+    --rain8: url('./assets/rain0.jpg');
+    --rain9: url('./assets/rain0.jpg');
+    --rain10: url('./assets/rain0.jpg');
+    --rain11: url('./assets/rain0.jpg');
+    --rain12: url('./assets/rain0.jpg');
+    --rain13: url('./assets/rain0.jpg');
+    --rain14: url('./assets/rain0.jpg');
+    --rain15: url('./assets/rain0.jpg');
+    --rain16: url('./assets/rain0.jpg');
+    --rain17: url('./assets/rain0.jpg');
+
+    --rain: 0;
+
+
+
+
+    --gain: green;
+    --loss: red;
+    --unch: black;
+
+    --width: 3840px;
+    --height: 2160px;
+
+    --left: 0px;
+    --right: 3140px;
+}
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    height: var(--height);
+
+    transform: scale(0.333);
+    transform-origin: 0 0;
+
+}
+
+#bg {
+
+    width: var(--width);
+    height: var(--height);
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-image: var(--day1);
+    background-size: cover;/* var(--width) var(--height); */
+    z-index: 0;
+}
+
+@font-face {
+    font-family: "Noto Sans Condensed";
+    src: url(./assets/NotoSans-Condensed.ttf);
+}
+
+
+.clock {
+    flex: 0 0 60px;
+    font-size: 204px;
+    font-family: "Noto Sans Condensed";
+}
+
+#container_top {
+    width: 700px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 192, 203, 0.58);
+    text-align: right;
+    left: var(--left);
+    position:absolute;
+    bottom: 0px;
+    z-index: 11;
+}
+
+
+
+#song {
+  font-size: 72px;
+  color: orangered;
+}
+
+
+#artist {
+  font-size: 64px;
+  color: orangered;
+}
+
+#cArt {
+  width: 572px;
+  height: 572px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cImg {
+ height: 100%;
+ width: 100%;
+ object-fit: contain;
+}
+
+#bg2 {
+
+  left: -100px;
+  top: -100px;
+
+
+  width: 4680px;
+  height: 2520px;
+
+
+
+  filter: blur(1rem);
+  background-image: var(--day1);
+
+  background-repeat: no-repeat;
+  background-position: center;   
+  background-size: cover;/* var(--width) var(--height); */
+  z-index: 0;
+
+  
+}
+
+.bgalpha {
+  background-color: rgba(230, 230, 250, 0.22);
+}
+
+
+#outer_plist2 {
+  
+  width: 720px; 
+  height: 1280px;
+}
+
+#container_plist2 {
+  
+  
+  position: absolute; 
+  left: 0px; 
+  top: 0px; 
+  width: 720px; 
+  height: 1280px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Hiragino Kaku Gothic Pro', 'MS PGothic', Arial, Helvetica, sans-serif;
+
+  color: lightgoldenrodyellow;
+  font-size: 4vw;
+
+}
+
+
+.container {
+    width: 100%;
+}
+
+#song {
+    font-size: 6vw;
+    color: orangered;
+}
+
+
+#artist {
+    font-size: 4vw;
+    color: orangered;
+}
+
+#cArt {
+    width: 572px;
+    height: 572px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cImg {
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+}
+
+
+#container_v2 {
+  position: absolute; 
+  left: 0px; 
+  top: 1440px; 
+  width: 1280px; 
+  height: 720px; 
+}
+
+#container_v1 {
+  position: absolute; 
+  left: 1280px; 
+  top: 1440px; 
+  width: 1280px; 
+  height: 720px; 
+}
+
+#container_vb {
+  position: absolute; 
+  left: 2560px; 
+  top: 1440px; 
+  width: 1280px; 
+  height: 720px; 
+}
+
+#container_wallpaper {
+  position: absolute; 
+  left: 720px; 
+  top: 0px; 
+  width: 3120px; 
+  height: 1440px; 
+
+  background-repeat: no-repeat;
+  background-position: center;   
+  background-size: cover;/* var(--width) var(--height); */
+  background-image: var(--day1);
+  z-index: 11;
+}
+
+
+
+#container_weather2 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  
+  width: 720px;
+  height: 400px;
+
+
+
+
+  background-color: rgba(230, 230, 250, 0.585);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+  color: rgb(250, 250, 210);
+  font-family: "Noto Sans";
+  
+  font-size: 66px;
+  z-index: 11;
+  
+}
+
+.weatherText{
+  flex: 0 0 100px;
+}
+
+
+.wic {
+  height: 60px;
+}
+
+#container_controller2 {
+
+  left: 0px;
+  top: 1280px;
+
+  width: 720px;
+  height: 160px;
+  
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.v_container {
+  font-size: 250%;
+}
+
+
+#container_clock {
+  color: rgb(190, 228, 221);
+  text-align: center;
+}
+
+
+.clock2 {
+  flex: 0 0 100px;
+  font-size: 168px;
+  font-family: "Noto Sans Condensed";
+}
+
+
+td {
+    text-align: center;
+}
+
+.alarm {
+    display: none;
+}
+

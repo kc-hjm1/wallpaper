@@ -1,0 +1,1 @@
+var tickers = '{"stock":{"CMI": "Cummings","ADBE": "Adobe","GS": "Goldman Sachs","TXN": "Texas Instruments","FLJP": "Frnaklin FTSE Japan ETF"},"currency": {"JPY": "USD"}}'

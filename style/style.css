@@ -1,0 +1,165 @@
+:root {
+    --day1: url('./style/day1.jpg');
+    --day2: url('./style/day2.png');
+    --day3: url('./style/day3.png');
+    --day4: url('./style/day4.png');
+    --day5: url('./style/day5.jpg');
+    --day6: url('./style/day6.jpg');
+    --day7: url('./style/day7.jpg');
+    --day8: url('./style/day8.png');
+    --day9: url('./style/day9.jpg');
+    --day10: url('./style/day10.jpg');
+    --day11: url('./style/day11.jpg');
+    --day12: url('./style/day12.jpg');
+    --day13: url('./style/day13.jpg');
+    --day14: url('./style/day14.png');
+    --day15: url('./style/day15.png');
+    --day16: url('./style/day16.jpg');
+    --day17: url('./style/day17.jpg');
+    --day18: url('./style/day18.png');
+    --evening1: url('./style/evening1.png');
+    --evening2: url('./style/evening2.png');
+    --evening3: url('./style/evening3.jpg');
+    --evening4: url('./style/evening4.png');
+    --evening5: url('./style/evening5.jpg');
+    --evening6: url('./style/evening6.jpg');
+    --evening7: url('./style/evening7.jpg');
+    --evening8: url('./style/evening8.jpg');    
+    --evening9: url('./style/evening9.jpg');
+    --evening10: url('./style/evening10.jpg');
+    --evening11: url('./style/evening11.jpg');
+    --evening12: url('./style/evening12.jpg');
+    --evening13: url('./style/evening13.jpg');
+    --evening14: url('./style/evening14.png');
+    --evening15: url('./style/evening15.jpg');
+    --evening16: url('./style/evening16.jpg');
+    --evening17: url('./style/evening17.png');
+    --evening18: url('./style/evening18.jpg');
+    --evening19: url('./style/evening19.jpg');
+    --night1: url('./style/night1.jpg');
+    --night2: url('./style/night2.png');
+    --night3: url('./style/night3.jpg');
+    --night4: url('./style/night4.jpg');
+    --night5: url('./style/night5.jpg');
+    --night6: url('./style/night6.png');
+    --night7: url('./style/night7.png');
+    --night8: url('./style/night8.jpg');
+    --night9: url('./style/night9.jpg');
+    --night10: url('./style/night10.jpg');
+    --night11: url('./style/night11.png');
+    --night12: url('./style/night12.jpg');
+    --night13: url('./style/night13.jpg');
+    --night14: url('./style/night14.jpg');
+    --night15: url('./style/night15.jpg');
+    --night16: url('./style/night16.jpg');
+    --night17: url('./style/night17.jpg');
+    --night18: url('./style/night18.jpg');
+
+    --gain: green;
+    --loss: red;
+    --unch: black;
+
+    --width: 1920px;
+    --height: 1080px;
+
+    --left: 0px;
+    --right: 1500px;
+}
+
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#bg {
+
+    width: var(--width);
+    height: var(--height);
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-image: var(--day1);
+    background-size: cover;/* var(--width) var(--height); */
+}
+
+@font-face {
+    font-family: "Noto Sans Condensed";
+    src: url(NotoSans-Condensed.ttf);
+}
+
+
+.clock {
+    flex: 0 0 60px;
+    font-size: 120px;
+    font-family: "Noto Sans Condensed";
+    
+}
+
+#container_top {
+    width: 420px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 192, 203, 0.58);
+    text-align: right;
+    left: var(--left);
+    position:absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+
+#container_playlist {
+    z-index: 1;
+    width: 420px;
+    height: 640px;
+    background-color: rgba(230, 230, 250, 0.58);
+    position: absolute;
+    bottom: 180px;
+    left: var(--left);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Hiragino Kaku Gothic Pro', 'MS PGothic', Arial, Helvetica, sans-serif;
+
+    color: darkmagenta;
+    font-size: 32px;
+}
+
+.container {
+    width: 100%;
+}
+
+#song {
+    font-size: 43px;
+    color: orangered;
+}
+
+
+#artist {
+    font-size: 32px;
+    color: orangered;
+}
+
+#cArt {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cImg {
+   height: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+.alarm {
+    display: none;
+}
+
