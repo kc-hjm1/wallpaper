@@ -1,0 +1,60 @@
+doctype html
+html
+  head 
+    meta(charset='utf-8')
+    meta(http-equiv='pragma', content='no-cache')
+    script(src='/js/jquery-3.6.0.min.js')
+    script(src='/js/hls.min.js')
+    script(src='/js/socket.io.esm.min.js')
+    script(src='/js/TweenMax.min.js')
+    link(rel='stylesheet' href='/style.css')
+  body
+    #bg2.bghidden
+    #container_plist2.playing.bgalpha
+      #song.playing.container
+      #artist.playing.container
+      #album.playing.container
+      #cArt.playing
+        img#cImg
+    #container_wallpaper.bgalpha.wallpaper 
+      #container_weather2.right 
+        .container.weather 
+          | Vancouver   
+          img#weatherIcon.wic
+          span#temp.weatherText
+          |  &deg;C | 
+          span#relativeHum.weatherText
+          | %
+          br
+          span#date.date2
+        #container_clock.container
+          span#MyClockDisplay.clock2.txtBlink 
+        audio#chime(style='display: none;')
+          source(src='./assets/auld-lang-syne.m4a')
+    #container_v2.bgalpha.rightClickable.player2
+      iframe#p2(width='100%' height='100%' src='https://www.youtube.com/embed/mGA2060waxI?autoplay=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    #container_v1.bgalpha.rightClickable.player1
+      iframe#p1(width='100%' height='100%' src='https://www.youtube.com/embed/K1QICrgxTjA?autoplay=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    #container_vb.bgalpha.rightClickable.player0
+      video#pB(width='100%' height='100%' controls)
+    #container_controller2.bgalpha
+      .container 
+        button#yVTUBE.v_container Reset YT2
+        button#bYoutube2.v_container YT @ 2
+      .container 
+        button#yNC.v_container Reset YT1 
+        button#bYoutube1.v_container YT @ 1
+      .container 
+        button#bBloomberg.v_container Reset B 
+        button#bYoutubeB.v_container YT @ B
+    #container_upcoming.bgalpha
+      
+      
+
+    
+    
+    script(src='/js/player2.js')
+    script(src='/js/alarm.json')
+    script(src='/js/timer.js')
+    script(src='/js/main.js')
+    script(src='/js/weather_q.js')

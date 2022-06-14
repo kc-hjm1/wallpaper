@@ -1,0 +1,12 @@
+{
+    "port": 8800,
+    "allowRemote": true,
+    "musicDirs": ["C:/Users/rps-studio/Music/output"],
+    "authRequired": false,
+    "authUser": "",
+    "authPassword": "",
+    "urlMappings": {},
+    "responseHeaders": {    
+        "Access-Control-Allow-Origin": "*"
+    }
+}
