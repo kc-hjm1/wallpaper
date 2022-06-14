@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "amqp": "^0.2.7",
+    "concat-stream": "^2.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "https": "^1.0.0",
+    "node-sarra": "file:node-sarra-trunk",
+    "openssl": "^2.0.0",
+    "pug": "^3.0.2",
+    "socket.io": "^4.4.1",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "eslint": "^8.12.0"
+  }
+}

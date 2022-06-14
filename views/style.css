@@ -1,0 +1,381 @@
+:root {
+    
+    --gain: green;
+    --loss: red;
+    --unch: black;
+
+
+    --width: 3840px;
+    --height: 2160px;
+
+    --left: 0px;
+    --right: 3140px;
+
+
+    --blue-ensign: hsl(222, 100%, 21%);
+    --red-ensign: hsl(353, 85%, 44%);
+
+
+
+    --top-os: 40px;
+}
+
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    height: 3840px;
+
+    transform: scale(0.355556);
+    transform-origin: 0 0;
+
+}
+
+/* Player changes */
+
+.xlMain {
+  
+  left: 0px;
+  top: 0px;
+  width: 3840px;
+  height: 2160px;
+
+}
+
+.vPlayer {
+  left: 720px;
+  top: 0px;
+  height: 1440px;
+  width: 2560px;
+
+  margin-left: 280px;
+  margin-right: 280px;
+}
+
+
+.wallpaper {
+
+  left: 0px;
+  top: 0px;
+  height: 1440px;
+  width: 3840px;
+}
+
+
+.player2 {
+  left: 0px;
+  top: 1440px;
+  width: 1280px;
+  height: 720px;
+  
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.player1 {
+  left: 1280px;
+  top: 1440px;
+  width: 1280px;
+  height: 720px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.player0 {
+  left: 2560px;
+  top: 1440px;
+  width: 1280px;
+  height: 720px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url(./assets/NotoSansJP-Medium.otf);
+}
+
+@font-face {
+    font-family: "Noto Sans Display";
+    src: url(./assets/NotoSansDisplay_SemiCondensed-Regular.ttf)
+}
+
+
+.clock {
+    flex: 0 0 60px;
+    font-size: 204px;
+    font-family: "Noto Sans Display";
+}
+
+
+#song {
+    font-size: 66px;
+    color: var(--red-ensign);
+}
+
+
+#artist {
+    font-size: 56px;
+    color: var(--red-ensign);
+}
+
+#cArt {
+    width: 572px;
+    height: 572px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cImg {
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+}
+
+
+#song {
+    font-size: 66px;
+    color: var(--red-ensign);
+}
+
+
+#artist {
+    font-size: 56px;
+    color: var(--red-ensign);
+}
+
+#cArt {
+    width: 572px;
+    height: 572px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cImg {
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+}
+
+
+#song {
+    font-size: 66px;
+    color: var(--red-ensign);
+}
+
+
+#artist {
+    font-size: 56px;
+    color: var(--red-ensign);
+}
+
+#bg2 {
+
+  left: -100px;
+  top: -100px;
+
+
+  width: 4680px;
+  height: 2520px;
+
+  filter: blur(1rem);
+
+  background-repeat: no-repeat;
+  background-position: center;   
+  background-size: cover; 
+  z-index: 0;
+
+} 
+
+.bghidden {
+  display: none;
+}
+
+.bgalpha {
+  background-color: rgba(230, 230, 250, 0.22);
+}
+
+
+#outer_plist2 {
+  
+  width: 720px; 
+  height: 1280px;
+}
+
+#container_plist2 {
+  
+  position: absolute; 
+
+
+  width: 720px; 
+  height: 1280px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Noto Sans JP";
+
+  color: var(--red-ensign);
+  font-size: 56px;
+
+ 
+  background-color: hsla(222, 100%, 21%, 0.438);
+
+  z-index: 13;
+
+}
+
+
+#album {
+  color: hsl(40, 99%, 60%);
+}
+
+
+.container {
+    width: 100%;
+}
+
+.cImgContainer {
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+#container_v2 {
+  position: absolute; 
+}
+
+#container_v1 {
+  position: absolute; 
+} 
+
+#container_vb {
+  position: absolute; 
+}
+
+
+#container_wallpaper {
+  position: absolute; 
+
+  background-repeat: no-repeat;
+  background-position: center;   
+  background-size: cover;/* var(--width) var(--height); */
+  z-index: 11;
+
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.left {
+  left: 0px;
+}
+
+.right {
+  right: 0px;
+}
+
+#container_weather2 {
+  position: absolute;
+  bottom: 0px;
+  
+  width: 720px;
+  height: 400px;
+
+  background-color: hsla(353, 85%, 44%, 0.438);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  z-index: 13;
+  
+}
+
+.weather {
+  color: hsl(40, 99%, 60%);
+  font-family: "Noto Sans Display";
+  
+  text-align: center;
+  font-size: 54px;
+}
+
+.weatherText{
+  flex: 0 0 100px;
+}
+
+
+.wic {
+  height: 60px;
+}
+
+#container_controller2 {
+  left: 0px;
+  top: 1280px;
+
+  width: 720px;
+  height: 160px;
+  
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  z-index: 15;
+}
+
+.v_container {
+  font-size: 250%;
+}
+
+#container_clock {
+  color: #001b69;
+  text-align: center;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: cyan;
+}
+
+
+.date2 {
+  flex: 0 0 60px;
+  font-size: 54px;
+  font-family: "Noto Sans Display";;
+}
+
+.clock2 {
+  flex: 0 0 100px;
+  font-size: 112px;
+  font-family: "Noto Sans Display";
+}
+
+#container_upcoming {
+  
+  position: absolute;
+  top: 1280px;
+  left: 720px;
+
+  
+  color: var(--blue-ensign);
+  font-size: 66px;
+  font-family: "Noto Sans Display";
+
+  width: 2400px;
+  height: 160px;
+  background-color: hsla(353, 85%, 44%, 0.438);
+  z-index: 11;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: cyan;
+}

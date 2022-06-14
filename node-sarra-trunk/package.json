@@ -1,0 +1,36 @@
+{
+  "name": "node-sarra",
+  "version": "0.0.11",
+  "description": "consume data from Environment and Climate Change Canada",
+  "license": "CC0",
+  "dependencies": {
+    "amqp": "^0.2.6"
+  },
+  "devDependencies": {
+    "jshint": "*"
+  },
+  "jshintConfig": {
+    "curly": true,
+    "esnext": true,
+    "eqeqeq": true,
+    "forin": true,
+    "freeze": true,
+    "futurehostile": true,
+    "latedef": true,
+    "maxlen": 80,
+    "mocha": true,
+    "noarg": true,
+    "nocomma": true,
+    "node": true,
+    "nonbsp": true,
+    "nonew": true,
+    "sub": true,
+    "strict": true,
+    "undef": true,
+    "unused": "vars",
+    "varstmt": true
+  },
+  "scripts": {
+    "lint": "jshint . --exclude node_modules"
+  }
+}
